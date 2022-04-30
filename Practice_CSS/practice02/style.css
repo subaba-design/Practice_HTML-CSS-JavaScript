@@ -1,0 +1,29 @@
+body {
+    width: 760px;
+    background-color: #cccccc; 
+    margin: 0 auto;
+}
+
+h2 {
+    color: #f00;
+    text-align: center;
+    background-color: #ff0;
+    border: 5px dashed #f00;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#important {
+    font-size: 30px;
+    color: #a00;
+}
