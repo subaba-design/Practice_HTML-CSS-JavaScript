@@ -1,0 +1,22 @@
+/* pxは絶対値 */
+html {
+    font-size: 24px;
+}
+body {
+    font-size: 32px;
+}
+
+/* 親要素からの相対値（200% = 親要素で定義されているfont-size(32px)の2倍） */
+.a {
+    font-size: 200%;
+}
+
+/* %と同じ（2em = 親要素で定義されているfont-size(32px)の2倍） */
+.b {
+    font-size: 2em;
+}
+
+/* ルートのhtmlセレクターに対して相対的な値（2rem = htmlのfont-size(24px)の2倍） */
+.c {
+    font-size: 2rem;
+}
