@@ -1,0 +1,116 @@
+/**
+ *  - ベースとなるスタイルを定義。
+ *  - body要素内の全ての要素はbody要素のスタイル定義を継承する。
+ */
+ body {
+    width: 80%;
+    border: 20px solid #bdc3c7;
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+  }
+  
+/**
+ * 各記事を表すclass属性値が `post` のスタイルを定義する
+ *
+ *  - 各記事の下には20pxのマージンを空けてください
+ *  - 各記事の下には投稿の区切りがわかるようにボーダーをセットしてください
+ *    - 太さ: 1px
+ *    - スタイル: dashed
+ *    - 色: #2c3e50
+ */
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #2c3e50;
+}
+
+/**
+ * 各記事の日付を表すclass属性値が `date` のスタイルを定義する
+ *
+ *  - 文字色: #3498db
+ *  - 文字サイズ: 1.1em
+ *  - 左にパッディング5pxをセットする
+ */
+.date {
+    color: #3498db;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+/**
+ * 記事内で強調したい文字のスタイルを定義する。 class属性値は `keyword`
+ *
+ *  - 文字を太くする
+ *  - 文字サイズ: 1.2em
+ *  - テキストに下線を引く
+ *  - 文字色: #ff0000
+ *  - テキストの左右に5pxのマージンを空ける
+ */
+.keyword {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: #ff0000;
+    margin: 0 5px;
+}
+
+/**
+ * 例(引用文)を表示するためのスタイルを定義する。class属性値は `example`
+ *
+ *  - 要素の左側にボーダーをセットする
+ *    - 太さ: 5px
+ *    - スタイル: solid
+ *    - 色: #bdc3c7
+ *  - 要素の左側にパッディングを5px入れる
+ *  - 要素の左側にマージンを5px空ける
+ */
+.example {
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+/**
+ * 記事の見出し(h2要素)のスタイルを定義する。
+ *
+ *  - 文字サイズ: 1.8em
+ *  - 文字を太くする
+ *  - 背景色: #2c3e50
+ *  - 文字色: #ffffff
+ *  - 上下左右に5pxずつパディングを入れる
+ */
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 5px;
+}
+
+/**
+ * 記事の小見出し(h3要素)のスタイルを定義する。
+ *
+ *  - 文字サイズ: 1.4em
+ *  - 文字色: #000000
+ *  - 要素の下側にボーダーを入れる
+ *    - 太さ: 1px
+ *    - スタイル: solid
+ *    - 色: #2c3e50
+ *  - 要素の左側に5pxのパディングを入れる
+ */
+h3 {
+    font-size: 1.4em;
+    color: #000000;
+    border-bottom: 1px solid #2c3e50;
+    padding-left: 5px;
+}
+
+/**
+ * 記事内のテキスト(p要素)のスタイルを定義する。
+ *
+ *  - 上下左右に5pxずつパディングを入れる
+ */
+p {
+    padding: 5px;
+}
