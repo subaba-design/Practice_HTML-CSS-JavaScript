@@ -6,41 +6,43 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <h1>ファイルをダウンロードして使う方法</h1>
-    <ol>
-        <li><a href="https://getbootstrap.com/">公式サイト</a>からファイルをダウンロード</li>
-        <li>
-            解凍したファイルからcssファイルとjsファイルをプロジェクトのディレクトリに入れる
-            <ul>
-                <li>bootstrap.min.css</li>
-                <li>bootstrap.min.js</li>
-            </ul>
-        </li>
-        <li>
-            jQueryをダウンロードする（BootstrapはjQueryに依存している）
-            <ul>
-                <li>「リンク先を別名で保存」</li>
-            </ul>
-        </li>
-        <li>
-            HTMLにファイルを読み込む
-            <ul>
-                <li>headタグに「link:css」</li>
-                <li>bodyの末尾に「script:src」
-                    <ol>
-                        <li>jquery（こっちを先に読み込む！）</li>
-                        <li>bootstrap</li>
-                    </ol>
-                </li>
-            </ul>
-        </li>
-        <li><a href="https://getbootstrap.com/">公式サイト</a>からコピペ</li>
-    </ol>
-    <br>
-    <h2>例（Components/Buttons）</h2>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>   
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <h1>ファイルをダウンロードして使う方法</h1>
+        <ol>
+            <li><a href="https://getbootstrap.com/">公式サイト</a>からファイルをダウンロード</li>
+            <li>
+                解凍したファイルからcssファイルとjsファイルをプロジェクトのディレクトリに入れる
+                <ul>
+                    <li>bootstrap.min.css</li>
+                    <li>bootstrap.min.js</li>
+                </ul>
+            </li>
+            <li>
+                jQueryをダウンロードする（BootstrapはjQueryに依存している）
+                <ul>
+                    <li>「リンク先を別名で保存」</li>
+                </ul>
+            </li>
+            <li>
+                HTMLにファイルを読み込む
+                <ul>
+                    <li>headタグに「link:css」</li>
+                    <li>bodyの末尾に「script:src」
+                        <ol>
+                            <li>jquery（こっちを先に読み込む！）</li>
+                            <li>bootstrap</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://getbootstrap.com/">公式サイト</a>からコピペ</li>
+        </ol>
+        <br>
+        <h2>例（Components/Buttons）</h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>   
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </div>
 </body>
 </html>
