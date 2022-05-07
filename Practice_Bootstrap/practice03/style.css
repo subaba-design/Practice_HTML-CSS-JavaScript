@@ -1,0 +1,29 @@
+/**
+ * - 背景色を #cccccc にする
+ */
+ body {
+    background: #cccccc;
+  }
+  
+  /**
+    * - ナビゲーションバーと画像一覧の間のスペースをあけるため、paddingを利用する
+    */
+  .img-gallery {
+    padding: 30px;
+  }
+  
+  /**
+    * - 各画像の下にあるタイトルは中央揃いにする
+    * - タイトルの上下にスペースを入れるためにmarginを追加する
+    */
+  .img-title {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /**
+    * - 画像幅を親要素内に収めるために100%を指定する
+    */
+  img {
+    width: 100%;
+  }
