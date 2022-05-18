@@ -70,7 +70,8 @@ each(fruits, (fruit, index) => {
 console.log('==========課題2==========');
 
 const map = (array, callback) => {
-    let resultingArray = [];
+    const resultingArray = [];
+    // ↑let としていたが、constでいい
     each(array, (element, index) => {
         const newElement = callback(element, index);
         resultingArray.push(newElement);
@@ -81,7 +82,7 @@ const map = (array, callback) => {
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const mappedNumbers = map(numbers, (num, i) => {
-    return num * i;
+    return num * 10;
 });
 
 console.log('mappedNumbers? : ', mappedNumbers);
@@ -122,7 +123,7 @@ console.log('==========課題3==========');
 const filter = (array, callback) => {
     let resultingArray = [];
     each(array, (element, index) => {
-        const condition  = callback(element, index);
+        const condition = callback(element, index);
         if (condition) {
             resultingArray.push(element);
         }
