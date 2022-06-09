@@ -55,22 +55,37 @@
     //   - 無し
     // - 戻り値
     //   - 無し
-    const fetchQuizData = () => {
+    const fetchQuizData = async () => {
         questionElement.textContent = 'Now loading...';
         resultElement.textContent   = '';
         restartButton.hidden        = true;
 
-        fetch(API_URL)
-            .then((response) => {
-                return response.json()
-            })
-            .then((data) => {
-                gameState.quizzes          = data.results;
-                gameState.currentIndex     = 0;
-                gameState.numberOfCorrects = 0;
+        // ↓aysnc/awaitでの実装
+        try {
+            const response = await fetch(API_URL);
+            const data     = await response.json();
 
-                setNextQuiz();
-            })
+            gameState.quizzes          = data.results;
+            gameState.currentIndex     = 0;
+            gameState.numberOfCorrects = 0;
+
+            setNextQuiz();
+        } catch (error) {
+            console.log('エラー : ', error.message);
+        }
+
+        // ↓Promiseでの実装
+        // fetch(API_URL)
+        //     .then((response) => {
+        //         return response.json()
+        //     })
+        //     .then((data) => {
+        //         gameState.quizzes          = data.results;
+        //         gameState.currentIndex     = 0;
+        //         gameState.numberOfCorrects = 0;
+
+        //         setNextQuiz();
+        //     })
     };
 
 
